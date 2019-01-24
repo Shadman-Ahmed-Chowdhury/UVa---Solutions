@@ -1,1 +1,1 @@
-# UVa---Solutions
+Some accepted solutions of UVa Problems
