@@ -7,9 +7,9 @@ LL N=10000001;
 bool status[10000001];
 void sieve()
 {
-	LL sq=sqrt(N);
-	for(LL i=4;i<=N;i+=2)
-            status[i]=1;
+    LL sq=sqrt(N);
+    for(LL i=4;i<=N;i+=2)
+       status[i]=1;
     prime.push_back(2);
 	for(LL i=3;i<=sq;i+=2){
 		if(status[i]==0)
@@ -19,10 +19,10 @@ void sieve()
 		}
 	}
 	for(LL i = 3; i <= N; i += 2)
-    {
-        if(status[i] == 0)
-            prime.push_back(i);
-    }
+    	{
+             if(status[i] == 0)
+            	prime.push_back(i);
+    	}
 }
 
 LL primeFactors(LL n)
